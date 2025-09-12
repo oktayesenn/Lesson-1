@@ -1,0 +1,170 @@
+<!-- Error 01: Wrong doctype -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!-- Error 02: lang attribute misspelled and unquoted -->
+<html lng=en>
+<!-- Error 03: <head> misspelled -->
+<haed>
+  <!-- Error 04: malformed meta charset -->
+  <meta charset="UTF8">
+  <!-- Error 05: <title> misspelled -->
+  <titel>Intro to HTML: Headings & Lists</titel>
+  <!-- Error 06: missing viewport meta for modern HTML (best practice requirement for this class) -->
+  <!-- (Students should add a proper viewport meta) -->
+  <!-- Error 07: stray text node in head -->
+  This text should not be inside <head>
+</haed>
+
+<!-- Error 08: <body> missing -->
+<bdy id="top">
+  <!-- Error 09: multiple <h1> used as section titles instead of a single page title -->
+  <h1 id="page-title" role="banner">Intro to HTML: Headings & Lists</h1>
+  <h1 id="page-title">Duplicate Page Title</h1> <!-- Error 10: duplicate id -->
+
+  <!-- Error 11: Heading jumps from h1 to h4 without hierarchy -->
+  <h4>What are Headings?</h4>
+
+  <!-- Error 12: A heading wrapping a paragraph (invalid nesting/semantics) -->
+  <h2><p>Headings define structure</p></h2>
+
+  <!-- Error 13: Nonexistent heading level <h7> -->
+  <h7>There is no h7</h7>
+
+  <!-- Error 14: Presentational/deprecated tag -->
+  <center>Centered intro text (deprecated)</center>
+
+  <!-- Error 15: Deprecated <font> tag -->
+  <font size="5" color="blue">Avoid using &lt;font&gt; tags</font>
+
+  <!-- Error 16: Unclosed paragraph -->
+  <p>We will practice fixing heading order and list structure
+
+  <!-- Error 17: <br> incorrectly closed -->
+  Line break below:</br>
+
+  <!-- Error 18: Using align attribute (deprecated) -->
+  <h3 align="center">Heading Alignment via CSS, not align</h3>
+
+  <!-- Error 19: Anchor with no href -->
+  <a>Click here to learn more</a>
+
+  <!-- Error 20: Invalid ARIA attribute name -->
+  <section aria-role="region" id="overview">
+    <!-- Error 21: Heading skipped level again (h3 after h4 previously) -->
+    <h3>Overview</h3>
+    <!-- Error 22: Unescaped ampersand intended as text (teach entities) -->
+    <p>Headings & lists are core HTML building blocks.</p>
+  </section>
+
+  <!-- Error 23: Use of <div> directly inside <ul> (only <li> allowed) -->
+  <h2>Unordered List Basics</h2>
+  <ul id="basics" start="3" reversed> <!-- Error 24: 'start' invalid on <ul> -->
+                                   <!-- Error 25: 'reversed' invalid on <ul> -->
+    <div>Item misplaced in UL</div>
+    <!-- Error 26: <li> missing closing tag -->
+    <li>First bullet
+    <!-- Error 27: <li> contains heading as direct child (poor semantics for this lesson) -->
+    <li><h5>Second bullet as a heading</h5></li>
+    <!-- Error 28: Empty LI -->
+    <li></li>
+    <!-- Error 29: LI contains block elements before text; require proper structure for lesson -->
+    <li><p>Third bullet</p></li>
+  </ul>
+
+  <!-- Error 30: List item outside of any list -->
+  <li>Floating list item outside UL/OL</li>
+
+  <h2>Ordered Lists</h2>
+  <!-- Error 31: Invalid type on OL -->
+  <ol type="roman" id="steps" class="primary" class="duplicate"> <!-- Error 32: duplicate attribute 'class' -->
+    <!-- Error 33: Missing LI closing -->
+    <li>Step 1
+    <!-- Error 34: Wrongly nested P inside OL directly (should be in LI) -->
+    <p>This paragraph should be within an LI</p>
+    <!-- Error 35: OL nested inside LI but not closed later -->
+    <li>Step 2
+      <ol start="0" reversed="maybe"> <!-- Error 36: reversed value must be boolean keyword only -->
+        <li>Substep A</li>
+        <!-- Error 37: Substep missing closing LI -->
+        <li>Substep B
+      </ol>
+    </li>
+    <!-- Error 38: Using <br> to separate LIs instead of proper items -->
+    <br>
+    <li>Step 3</li>
+    <!-- Error 39: Closing tag mismatch -->
+    </ul>
+  </ol>
+
+  <h2 id="examples">Examples</h2>
+  <!-- Error 40: Description list misused for bullets (use UL/OL for bullets) -->
+  <dl>
+    <dt>• Wrong list type</dt>
+    <dd>Should be a UL with LIs</dd>
+    <!-- Error 41: DT without following DD -->
+    <dt>Another term without definition
+  </dl> <!-- Error 42: Missing closing DT/DD tags above -->
+
+  <!-- Error 43: Custom data-* attribute invalid because of space -->
+  <section data-topic name="headings">Correct data-* is data-topic="headings"</section>
+
+  <!-- Error 44: Bad comment syntax -->
+  <!--- This comment starts with three dashes --->
+
+  <!-- Error 45: Improper nesting: UL inside P -->
+  <p>Here is a list:
+    <ul>
+      <li>Nested inside a paragraph (don’t do this)</li>
+    </ul>
+  </p>
+
+  <!-- Error 46: Heading level starts new section but IDs repeat -->
+  <h2 id="examples">Duplicate ID again</h2>
+
+  <!-- Error 47: Mixing OL/UL incorrectly (closing mismatch at end) -->
+  <ul id="mix">
+    <li>Alpha</li>
+    <li>Beta</li>
+    <ol>
+      <li>One</li>
+      <li>Two</li>
+  </ul> <!-- Error 48: OL never closed before closing UL -->
+
+  <!-- Error 49: ARIA role misapplied to non-widget incorrectly -->
+  <h2 role="button">Don’t give heading a button role</h2>
+
+  <!-- Error 50: Heading used purely for styling; should be a paragraph with CSS -->
+  <h6>Tiny text used as caption (use CSS)</h6>
+
+  <!-- Error 51: Nonstandard attribute on H2 -->
+  <h2 highlight="true">Fix me without custom attributes</h2>
+
+  <!-- Error 52: Inconsistent casing in tags (teach style consistency) -->
+  <Ul>
+    <LI>Uppercase tags are allowed but discouraged in class style guide</LI>
+  </Ul>
+
+  <!-- Error 53: Extra closing tag -->
+  </section>
+
+  <!-- Error 54: Incorrect entity for angle bracket written raw -->
+  <p>Use &lt;li&gt; not <li></p>
+
+  <!-- Error 55: Trailing whitespace-only nodes significant for this assignment (ask to clean) -->
+  
+  
+  <!-- Error 56: Navigation list using <div> instead of proper list -->
+  <nav>
+    <div>Home</div>
+    <div>About</div>
+    <div>Contact</div>
+  </nav>
+
+  <!-- Error 57: Heading level leap (h2 to h5) -->
+  <h5>Final Notes</h5>
+
+  <!-- Error 58: Misclosed heading -->
+  <h3>Close tags properly</h4>
+
+  <!-- Error 59: Body not properly closed (and body tag was misspelled) -->
+  <!-- Error 60: HTML not properly closed -->
