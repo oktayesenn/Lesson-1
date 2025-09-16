@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- ERROR 1: title not properly closed -->
+    <title>CSS Styling with Classes, IDs and Divs<title>
+    
+    <!-- ERROR 2: link tag with wrong href syntax -->
+    <link rel="stylesheet" href=activity4.css>
+    
+    <!-- ERROR 3: style tag broken -->
+    <style type="text/csss">
+        /* Inline styles here */
+    </style>
+    
+    <!-- ERROR 4: meta viewport broken -->
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    
+<!-- ERROR 5: Missing closing head -->
+
+<!-- ERROR 6: body with broken opening -->
+<body<
+    <!-- ERROR 7: div not closed -->
+    <div id="header"
+        <!-- ERROR 8: h1 with two IDs -->
+        <h1 id="title" id="main-title">CSS Styling Guide</h1>
+    </div>
+    
+    <!-- ERROR 9: div with invalid ID starting with number -->
+    <div id="1st-section">
+        <h2>Using IDs and Classes</h2>
+    </div>
+    
+    <!-- ERROR 10: Missing closing div -->
+    <div class="container">
+        <p>IDs are unique identifiers.</p>
+        <!-- ERROR 11: class attribute without quotes -->
+        <p class=highlight>Classes can be reused.</p>
+    
+    <!-- ERROR 12: div self-closing (invalid) -->
+    <div class="box"/>
+        <h3>The Box Model</h3>
+    </div>
+    
+    <!-- ERROR 13: Multiple class attributes -->
+    <div class="section" class="important">
+        <p>Content goes here.</p>
+    </div>
+    
+    <!-- ERROR 14: ID with spaces -->
+    <div id="my special div">
+        <!-- ERROR 15: Missing closing h2 -->
+        <h2>CSS Properties
+    </div>
+    
+    <!-- ERROR 16: div with wrong closing tag -->
+    <div class="text-style">
+        <p>Styled paragraph.</p>
+    </divs>
+    
+    <!-- ERROR 17: Nested div without closing -->
+    <div id="outer">
+        <div id="inner">
+            <p>Nested content</p>
+        <!-- ERROR 18: Only one div closed -->
+    </div>
+    
+    <!-- ERROR 19: div tag incomplete -->
+    <div class="sidebar"
+        <h3>Sidebar Content</h3>
+        <!-- ERROR 20: ul inside p (invalid) -->
+        <p>Menu items:
+            <ul>
+                <li>Home</li>
+                <li>About
+                <!-- ERROR 21: Missing closing li -->
+            </ul>
+        </p>
+    </div>
+    
+    <!-- ERROR 22: Class with invalid characters -->
+    <div class="my-class!">
+        <h4>Special Characters</h4>
+    </div>
+    
+    <!-- ERROR 23: div spelled wrong -->
+    <dvi class="content">
+        <p>Main content area.</p>
+    </div>
+    
+    <!-- ERROR 24: ID attribute empty -->
+    <div id="">
+        <p>Empty ID is invalid.</p>
+    </div>
+    
+    <!-- ERROR 25: Missing opening div -->
+    </div>
+    
+    <h2>Common CSS Classes</h2>
+    
+    <!-- ERROR 26: class with equals sign -->
+    <p class=="text-center">Centered text.</p>
+    
+    <!-- ERROR 27: Multiple IDs separated by space -->
+    <p id="para1 para2">Multiple IDs not allowed.</p>
+    
+    <!-- ERROR 28: div with style attribute wrong -->
+    <div style"color: red;">
+        <p>Inline styles.</p>
+    </div>
+    
+    <!-- ERROR 29: Uppercase DIV -->
+    <DIV class="footer">
+        <!-- ERROR 30: Missing p opening -->
+        Footer content.</p>
+    </DIV>
+    
+    <!-- ERROR 31: div with broken syntax -->
+    <div> class="broken">
+        <p>Syntax error above.</p>
+    </div>
+    
+    <!-- ERROR 32: Only closing tag -->
+    </div>
+    
+    <!-- ERROR 33: div with dot in tag -->
+    <div.container>
+        <p>Final content.</p>
+    </div>
+    
+    <!-- ERROR 34: ID with special character @ -->
+    <div id="user@name">
+        <p>Invalid ID.</p>
+    </div>
+    
+    <!-- ERROR 35: Class starting with number -->
+    <div class="2column">
+        <p>Class can't start with number.</p>
+    </div>
+    
+    <!-- ERROR 36: div with forward slash in opening -->
+    </div class="section">
+        <h3>Section Title</h3>
+    </div>
+    
+    <!-- ERROR 37: Missing closing p -->
+    <p class="intro">Introduction paragraph
+    
+    <!-- ERROR 38: div inside span (invalid nesting) -->
+    <span>
+        <div>Wrong nesting</div>
+    </span>
+    
+    <!-- ERROR 39: ID with quotes in value -->
+    <div id="my"id">
+        <p>Broken ID.</p>
+    </div>
+    
+    <!-- ERROR 40: Class with comma -->
+    <div class="first,second">
+        <p>Wrong class syntax.</p>
+    </div>
+    
+    <!-- ERROR 41: div tag with hyphen -->
+    <div-container>
+        <p>Invalid tag name.</p>
+    </div-container>
+    
+    <!-- ERROR 42: Missing closing h3 -->
+    <h3>Grid Layout
+    
+    <div class="grid">
+        <!-- ERROR 43: div with only closing bracket -->
+        div class="cell">
+            <p>Grid cell</p>
+        </div>
+    </div>
+    
+    <!-- ERROR 44: Class attribute with no value -->
+    <div class>
+        <p>Empty class.</p>
+    </div>
+    
+    <!-- ERROR 45: ID with colon -->
+    <div id="section:main">
+        <p>Invalid character in ID.</p>
+    </div>
+    
+    <!-- ERROR 46: Multiple style attributes -->
+    <div style="color: blue;" style="font-size: 16px;">
+        <p>Multiple styles.</p>
+    </div>
+    
+    <!-- ERROR 47: div not properly opened -->
+    <div
+    class="card">
+        <h4>Card Title</h4>
+        <!-- ERROR 48: Missing closing h4 above... actually it's there, let me fix -->
+        <p>Card content
+        <!-- ERROR 48: Missing closing p -->
+    </div>
+    
+    <!-- ERROR 49: Nested divs with same ID -->
+    <div id="unique">
+        <div id="unique">
+            <p>Duplicate IDs.</p>
+        </div>
+    </div>
+    
+    <!-- ERROR 50: div with space before closing -->
+    <div class="wrapper" >
+        <!-- ERROR 51: Missing closing tag -->
+        <p>Wrapper content
+    </div>
+    
+    <!-- ERROR 52: Class with pipe character -->
+    <div class="left|right">
+        <p>Invalid class.</p>
+    </div>
+    
+    <!-- ERROR 53: div tag number at end -->
+    <div2>
+        <p>Wrong tag.</p>
+    </div2>
+    
+    <!-- ERROR 54: Missing ID value -->
+    <div id=>
+        <p>No ID value.</p>
+    </div>
+    
+    <!-- ERROR 55: Broken closing div -->
+    <div class="final">
+        <p>Final section.</p>
+    <div>
+    
+    <!-- ERROR 56: div with wrong quote type mix -->
+    <div class='mixed">
+        <p>Quote mismatch.</p>
+    </div>
+    
+    <!-- ERROR 57: Missing closing body -->
+    
+    <!-- ERROR 58: html closing broken -->
+    <html>
+    
+    <!-- ERROR 59: Random text outside -->
+    Random text
+    
+    <!-- ERROR 60: Missing proper document end -->

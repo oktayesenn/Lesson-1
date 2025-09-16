@@ -1,0 +1,75 @@
+/* Activity 1: Basic CSS Properties - 25 Errors to Find */
+
+/* ERROR 1: Missing opening brace */
+body 
+    /* ERROR 2: background-color misspelled */
+    backgrund-color: lightblue;
+    /* ERROR 3: Missing semicolon after property */
+    color: #333
+    /* ERROR 4: font-family value not in quotes when it has spaces */
+    font-family: Arial Sans Serif;
+    /* ERROR 5: margin with only 3 values (should be 1, 2, or 4) */
+    margin: 10px 20px 30px;
+}
+
+/* ERROR 6: h1 selector has extra dot */
+.h1 {
+    /* ERROR 7: color value invalid format */
+    color: dark blue;
+    /* ERROR 8: font-size missing unit */
+    font-size: 36;
+    /* ERROR 9: text-align value misspelled */
+    text-align: centres;
+}
+
+/* ERROR 10: Missing closing brace for p selector */
+p {
+    /* ERROR 11: line-height with wrong unit */
+    line-height: 1.5px;
+    /* ERROR 12: padding negative value without proper syntax */
+    padding: -10px;
+
+/* ERROR 13: Selector with space in element name */
+h 2 {
+    /* ERROR 14: text-decoration value invalid */
+    text-decoration: underlined;
+    /* ERROR 15: Invalid property name */
+    font-wait: bold;
+}
+
+/* ERROR 16: Missing selector before brace */
+{
+    padding: 15px;
+}
+
+/* ERROR 17: Comment not closed properly */
+/* This is a comment that helps style the page
+h3 {
+    /* ERROR 18: Duplicate semicolons */
+    color: green;;
+    /* ERROR 19: margin shorthand with wrong syntax */
+    margin: 10 px;
+}
+
+/* ERROR 20: Missing colon between property and value */
+h4 {
+    font-size 20px;
+    /* ERROR 21: border shorthand wrong order */
+    border: red 2px;
+}
+
+/* ERROR 22: CSS property outside of selector */
+background-color: yellow;
+
+/* ERROR 23: Colon instead of semicolon */
+h5 {
+    font-weight: bold:
+}
+
+/* ERROR 24: Property with equals sign instead of colon */
+h6 {
+    color = blue;
+}
+
+/* ERROR 25: Missing closing comment */
+/* Final styles for the page

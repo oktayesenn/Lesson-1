@@ -1,0 +1,74 @@
+/* Activity 4: Classes, IDs & Div Styling - 25 Errors to Find */
+
+/* ERROR 1: ID selector with wrong symbol */
+$header {
+    /* ERROR 2: background with invalid color name */
+    background-color: extra-light-blue;
+    /* ERROR 3: width with wrong unit */
+    width: 100pixels;
+    /* ERROR 4: height without unit */
+    height: 50;
+}
+
+/* ERROR 5: Class selector missing dot */
+container {
+    /* ERROR 6: margin auto as string */
+    margin: "auto";
+    /* ERROR 7: max-width with space */
+    max-width: 1200 px;
+}
+
+/* ERROR 8: Multiple classes selector wrong syntax */
+.box.highlight {
+    /* ERROR 9: border incomplete values */
+    border: solid;
+    /* ERROR 10: box-shadow wrong syntax */
+    box-shadow: 10px 10px;
+}
+
+/* ERROR 11: div selector with hash */
+#div {
+    /* ERROR 12: display value wrong */
+    display: show;
+    /* ERROR 13: position value wrong */
+    position: center;
+}
+
+/* ERROR 14: ID with space in selector */
+#main content {
+    /* ERROR 15: float value wrong */
+    float: middle;
+}
+
+/* ERROR 16: Missing colon */
+.text-style {
+    font-weight bold;
+    /* ERROR 17: text-align with wrong value */
+    text-align: justify-all;
+}
+
+/* ERROR 18: Property outside selector */
+color: blue;
+
+/* ERROR 19: Closing brace missing */
+#footer {
+    /* ERROR 20: min-height negative */
+    min-height: -100px;
+    /* ERROR 21: overflow value wrong */
+    overflow: hide;
+
+/* ERROR 22: Wrong combinator syntax */
+div > > p {
+    margin: 10px;
+}
+
+/* ERROR 23: Class name starting with number */
+.2column {
+    /* ERROR 24: flex property wrong */
+    display: flexbox;
+}
+
+/* ERROR 25: Missing closing brace and comment */
+/* Div styles
+.wrapper {
+    padding: 20px;

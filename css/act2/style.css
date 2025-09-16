@@ -1,0 +1,76 @@
+/* Activity 2: Styling Headings - 25 Errors to Find */
+
+/* ERROR 1: Selector using wrong symbol for element */
+#h1 {
+    /* ERROR 2: color with invalid hex code */
+    color: #GGG;
+    /* ERROR 3: font-size with space in value */
+    font-size: 40 px;
+    /* ERROR 4: text-transform value wrong */
+    text-transform: uppercase-all;
+}
+
+/* ERROR 5: Missing closing brace */
+h2 {
+    /* ERROR 6: margin shorthand with 5 values (invalid) */
+    margin: 10px 20px 30px 40px 50px;
+    /* ERROR 7: color using wrong RGB format */
+    color: rgba(255, 0, 0);
+    /* ERROR 8: Missing semicolon */
+    padding: 15px
+
+/* ERROR 9: Wrong selector for all headings */
+h1, h2, h3, h4, h5, h6, h7 {
+    /* ERROR 10: font-weight with invalid value */
+    font-weight: heavy;
+    /* ERROR 11: line-height as percentage without % */
+    line-height: 150;
+}
+
+/* ERROR 12: Selector with invalid character */
+h3! {
+    /* ERROR 13: text-align spelled wrong */
+    text-aling: center;
+    /* ERROR 14: border shorthand incomplete */
+    border: solid;
+}
+
+/* ERROR 15: Multiple selectors wrong syntax */
+h4 h5 {
+    /* ERROR 16: text-decoration with wrong value */
+    text-decoration: underlined;
+    /* ERROR 17: Missing value for property */
+    margin-top: ;
+}
+
+/* ERROR 18: Class selector for heading element wrong */
+.h6 {
+    /* ERROR 19: font-style value incorrect */
+    font-style: italics;
+    /* ERROR 20: letter-spacing without unit */
+    letter-spacing: 2;
+}
+
+/* ERROR 21: Property without selector */
+text-transform: lowercase;
+
+/* ERROR 22: Colon instead of semicolon */
+h1 {
+    margin-bottom: 20px:
+    padding-top: 10px;
+}
+
+/* ERROR 23: Using = instead of : */
+h2 {
+    font-family = "Arial", sans-serif;
+}
+
+/* ERROR 24: Invalid pseudo-class */
+h3:hovered {
+    color: blue;
+}
+
+/* ERROR 25: Missing closing comment and brace */
+/* Heading styles
+h4 {
+    text-shadow: 2px 2px gray;
