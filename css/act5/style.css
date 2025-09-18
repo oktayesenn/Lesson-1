@@ -1,0 +1,180 @@
+/* ================================================
+   CSS DEBUGGING ACTIVITY 1: BASIC SYNTAX & PROPERTIES
+   40 ERRORS TO FIND AND FIX
+   
+   CORRECT CSS SYNTAX:
+   selector {
+       property: value;
+   }
+   
+   EXAMPLE:
+   h1 {                 <- selector (what to style)
+       color: red;      <- property: value;
+   }                    <- closing brace
+   ================================================ */
+
+/* SECTION 1: BASIC SELECTORS AND COLOR PROPERTIES */
+
+/* ERROR 1: Missing opening brace */
+h1 
+    color: blue;
+    font-size: 24px;
+}
+
+/* ERROR 2: Missing colon between property and value */
+h2 {
+    color red;
+    /* ERROR 3: Missing semicolon at end */
+    background-color: yellow
+}
+
+/* ERROR 4: Using equals sign instead of colon */
+p {
+    color = green;
+    /* ERROR 5: Color value needs # for hex codes */
+    background-color: FFF;
+}
+
+/* ERROR 6: Missing closing brace */
+h3 {
+    color: #333;
+    font-size: 18px;
+
+
+/* SECTION 2: FONT PROPERTIES */
+
+/* ERROR 7: Property name misspelled */
+body {
+    font-colour: black;
+    /* ERROR 8: Font family with spaces needs quotes */
+    font-family: Arial Black;
+    /* ERROR 9: Font-size missing unit */
+    font-size: 16;
+}
+
+/* ERROR 10: Font-weight wrong value */
+strong {
+    font-weight: heavy;
+    /* ERROR 11: Font-style wrong value */
+    font-style: slanted;
+}
+
+/* ERROR 12: Selector has extra dot (h4 is element, not class) */
+.h4 {
+    /* ERROR 13: Text-decoration wrong value */
+    text-decoration: underlined;
+    /* ERROR 14: Text-align wrong value */
+    text-align: middle;
+}
+
+
+/* SECTION 3: SPACING PROPERTIES (MARGIN & PADDING) */
+
+/* ERROR 15: Margin with only 3 values (should be 1, 2, or 4) */
+.container {
+    margin: 10px 20px 30px;
+    /* ERROR 16: Padding negative value (padding can't be negative) */
+    padding: -15px;
+}
+
+/* ERROR 17: Using comma instead of space for multiple values */
+#header {
+    margin: 10px, 20px, 10px, 20px;
+    /* ERROR 18: Padding missing unit */
+    padding: 25;
+}
+
+/* ERROR 19: Wrong property name */
+.box {
+    margine: 20px;
+    /* ERROR 20: Space between value and unit */
+    padding: 15 px;
+}
+
+
+/* SECTION 4: CLASS AND ID SELECTORS */
+
+/* ERROR 21: Class selector missing dot */
+sidebar {
+    width: 300px;
+    /* ERROR 22: Height missing unit */
+    height: 400;
+}
+
+/* ERROR 23: ID selector using dot instead of hash */
+.footer {
+    /* ERROR 24: Background-color misspelled */
+    background-colour: gray;
+}
+
+/* ERROR 25: Multiple classes wrong syntax (needs comma or no space) */
+.class1 .class2 {
+    /* This selects .class2 INSIDE .class1, not both classes */
+    /* ERROR 26: Border shorthand wrong order */
+    border: red 2px;
+}
+
+
+/* SECTION 5: TEXT AND LINE PROPERTIES */
+
+/* ERROR 27: Line-height with px (better without unit or with %) */
+p {
+    line-height: 24px;
+    /* ERROR 28: Letter-spacing missing unit */
+    letter-spacing: 2;
+}
+
+/* ERROR 29: Text-transform wrong value */
+.uppercase {
+    text-transform: all-caps;
+    /* ERROR 30: Color using invalid format */
+    color: dark-blue;
+}
+
+
+/* SECTION 6: DISPLAY AND POSITION */
+
+/* ERROR 31: Display wrong value */
+.block {
+    display: show;
+    /* ERROR 32: Position wrong value */
+    position: center;
+}
+
+/* ERROR 33: Float wrong value */
+.image {
+    float: center;
+    /* ERROR 34: Overflow wrong value */
+    overflow: hide;
+}
+
+
+/* SECTION 7: BORDER PROPERTIES */
+
+/* ERROR 35: Border incomplete (needs width, style, and color) */
+div {
+    border: solid;
+}
+
+/* ERROR 36: Border-radius with comma */
+.rounded {
+    border-radius: 5px, 10px;
+    /* ERROR 37: Border-width wrong format */
+    border-width: medium-thick;
+}
+
+
+/* SECTION 8: COMMON SYNTAX ERRORS */
+
+/* ERROR 38: Property outside of selector */
+background-color: white;
+
+/* ERROR 39: Selector without any properties */
+.empty {
+}
+
+/* ERROR 40: Comment not closed properly */
+/* This is a broken comment
+h5 {
+    color: purple;
+}
