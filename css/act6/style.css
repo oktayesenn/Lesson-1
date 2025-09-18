@@ -1,0 +1,173 @@
+/* ================================================
+   CSS DEBUGGING ACTIVITY 2: SELECTORS & PROPERTIES
+   40 ERRORS TO FIND AND FIX
+   
+   SELECTOR TYPES:
+   element     ->  p { }
+   .class      ->  .className { }
+   #id         ->  #idName { }
+   element.class -> p.highlight { }
+   
+   PROPERTY STRUCTURE:
+   property-name: property-value;
+   ↑            ↑                ↑
+   name       colon           semicolon
+   ================================================ */
+
+/* SECTION 1: ID AND CLASS COMBINATIONS */
+
+/* ERROR 1: ID selector with wrong symbol */
+$navigation {
+    /* ERROR 2: Width with wrong unit name */
+    width: 100pixels;
+    /* ERROR 3: Max-width with space in value */
+    max-width: 1200 px;
+}
+
+/* ERROR 4: Class name starting with number (invalid) */
+.2-columns {
+    /* ERROR 5: Display flex wrong value */
+    display: flexbox;
+    /* ERROR 6: Justify-content wrong value */
+    justify-content: middle;
+}
+
+/* ERROR 7: Double dot for class */
+..highlight {
+    /* ERROR 8: Background shorthand wrong */
+    background: url(image.jpg), no-repeat;
+    /* ERROR 9: Opacity greater than 1 */
+    opacity: 1.5;
+}
+
+
+/* SECTION 2: MULTIPLE SELECTORS */
+
+/* ERROR 10: Missing comma between selectors */
+h1 h2 h3 {
+    /* This selects h3 inside h2 inside h1! */
+    /* ERROR 11: Font-family fallback without quotes */
+    font-family: Arial, Times New Roman, serif;
+}
+
+/* ERROR 12: Wrong descendant selector */
+div >> p {
+    /* ERROR 13: Margin shorthand with 'auto' in wrong position */
+    margin: auto 20px;
+}
+
+/* ERROR 14: Child selector with space */
+ul > > li {
+    /* ERROR 15: List-style wrong value */
+    list-style: bullets;
+}
+
+
+/* SECTION 3: PSEUDO-CLASSES AND PSEUDO-ELEMENTS */
+
+/* ERROR 16: Hover pseudo-class with wrong syntax */
+a.hover {
+    /* Should be a:hover */
+    /* ERROR 17: Text-decoration multiple values wrong */
+    text-decoration: underline bold;
+}
+
+/* ERROR 18: Wrong pseudo-element syntax */
+p:first-letter {
+    /* Should be ::first-letter (double colon for pseudo-elements) */
+    /* ERROR 19: Font-size percentage without % */
+    font-size: 150;
+}
+
+/* ERROR 20: Invalid pseudo-class */
+button:clicked {
+    /* Should be :active or :focus */
+    /* ERROR 21: Background-color RGB wrong format */
+    background-color: rgb(255, 0);
+}
+
+
+/* SECTION 4: BOX MODEL PROPERTIES */
+
+/* ERROR 22: Box-sizing wrong value */
+* {
+    box-sizing: content;
+    /* ERROR 23: Margin auto as string */
+    margin: "auto";
+}
+
+/* ERROR 24: Padding with 5 values (invalid) */
+.card {
+    padding: 10px 20px 30px 40px 50px;
+    /* ERROR 25: Border-radius percentage without % */
+    border-radius: 50;
+}
+
+
+/* SECTION 5: COLORS AND BACKGROUNDS */
+
+/* ERROR 26: Hex color with wrong format */
+.alert {
+    color: #GGG;
+    /* ERROR 27: Background-image without url() */
+    background-image: "image.png";
+}
+
+/* ERROR 28: RGBA with wrong number of values */
+.overlay {
+    background-color: rgba(0, 0, 0);
+    /* ERROR 29: Hex color too short */
+    border-color: #FF;
+}
+
+
+/* SECTION 6: FLEXBOX AND LAYOUT */
+
+/* ERROR 30: Flex property wrong format */
+.flex-item {
+    flex: 1, 1, auto;
+    /* ERROR 31: Align-items wrong value */
+    align-items: middle;
+}
+
+/* ERROR 32: Grid template wrong syntax */
+.grid {
+    display: grid;
+    /* ERROR 33: Grid-template-columns wrong */
+    grid-template-columns: 1fr, 2fr, 1fr;
+}
+
+
+/* SECTION 7: TRANSITIONS AND TRANSFORMS */
+
+/* ERROR 34: Transition missing property to transition */
+.button {
+    transition: 0.3s;
+    /* ERROR 35: Transform wrong function name */
+    transform: rotate-z(45deg);
+}
+
+/* ERROR 36: Animation duration without unit */
+.animated {
+    animation-duration: 2;
+    /* ERROR 37: Transform multiple values wrong */
+    transform: scale(1.5), rotate(30deg);
+}
+
+
+/* SECTION 8: FINAL COMMON ERRORS */
+
+/* ERROR 38: Important flag wrong syntax */
+.override {
+    color: red !Important;
+    /* ERROR 39: Z-index with unit (should be unitless) */
+    z-index: 10px;
+}
+
+/* ERROR 40: Media query wrong syntax */
+@media screen (max-width: 768px) {
+    /* Missing 'and' between screen and condition */
+    body {
+        font-size: 14px;
+    }
+}
